@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Reko Digital - Upgrade Skill & Tools Digital Tanpa Bingung</title>
+    <meta name="description" content="Reko Digital hadir untuk bantu kamu menemukan produk digital, ecourse, dan tools terbaik — terpercaya, terbukti, langsung siap pakai. Hemat waktu dan biaya.">
+    <meta name="keywords" content="produk digital, ecourse, tools digital, rekomendasi, belajar online, skill digital, canva, content creator">
+    <meta name="author" content="Reko Digital">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rekodigital.com/">
+    <meta property="og:title" content="Reko Digital - Upgrade Skill & Tools Digital Tanpa Bingung">
+    <meta property="og:description" content="Temukan produk digital, ecourse, dan tools terbaik yang terpercaya dan terbukti. Hemat waktu dan biaya dengan rekomendasi dari Reko Digital.">
+    <meta property="og:image" content="https://placehold.co/1200x630/3b82f6/ffffff?text=Reko+Digital">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rekodigital.com/">
+    <meta property="twitter:title" content="Reko Digital - Upgrade Skill & Tools Digital Tanpa Bingung">
+    <meta property="twitter:description" content="Temukan produk digital, ecourse, dan tools terbaik yang terpercaya dan terbukti. Hemat waktu dan biaya dengan rekomendasi dari Reko Digital.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/3b82f6/ffffff?text=Reko+Digital">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Animate On Scroll (AOS) Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for carousel transition */
+        #testimonial-container {
+            transition: transform 0.5s ease-in-out;
+        }
+        /* Custom animation for FAQ dropdown */
+        details[open] summary ~ * {
+            animation: sweep .5s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+        /* Responsive Countdown Timer Style */
+        .countdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 40px;
+        }
+        .countdown-number {
+            font-size: 1.75rem; /* text-2xl */
+            font-weight: 700;
+            line-height: 1;
+        }
+        .countdown-label {
+            font-size: 0.75rem; /* text-xs */
+            text-transform: uppercase;
+            margin-top: 0.25rem;
+        }
+
+        @media (min-width: 640px) { /* sm breakpoint */
+            .countdown-number {
+                font-size: 2.25rem; /* text-4xl */
+            }
+            .countdown-label {
+                font-size: 0.875rem; /* text-sm */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">
+                Reko<span class="text-gray-800">Digital</span>
+            </a>
+            <a href="#produk" class="hidden md:inline-block bg-blue-600 text-white font-semibold py-2 px-5 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                Lihat Rekomendasi
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-gray-50 -z-1"></div>
+            <div class="container mx-auto px-6 py-20 text-center z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4" data-aos="fade-down">
+                    🚀 Upgrade <span class="text-blue-600">Skill & Tools Digital</span> Tanpa Bingung Pilih!
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
+                    Waktu kamu terlalu berharga untuk riset yang nggak pasti. Reko Digital hadir untuk bantu kamu menemukan produk digital, ecourse, dan tools terbaik — terpercaya, terbukti, langsung siap pakai.
+                </p>
+                <a href="#produk" class="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105 shadow-lg animate-pulse" data-aos="zoom-in" data-aos-delay="400">
+                    🔵 Lihat Semua Rekomendasi
+                </a>
+                <p class="mt-8 text-sm text-gray-500 italic" data-aos="fade-up" data-aos-delay="600">
+                    Bayangkan… semua tools yang kamu butuhkan, sudah terkurasikan. Kamu tinggal pilih, klik, pakai. Sesederhana itu.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. TRUST BADGE / RIBBON -->
+        <section id="trust-badge" class="bg-blue-50 border-y border-blue-100">
+            <div class="container mx-auto px-6 py-6 text-center" data-aos="fade-in">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 text-gray-700 font-semibold">
+                    <p>⭐⭐⭐⭐⭐ Dipercaya oleh 1,500+ pebisnis & pembelajar digital.</p>
+                    <span class="hidden md:inline">|</span>
+                    <p>Kami hanya merekomendasikan produk partner resmi & terbukti.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. WHY US — VALUE BLOC -->
+        <section id="why-us" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        💡 Kenapa Harus Lewat Reko Digital?
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.78l1.21 1.21a1 1 0 0 0 1.42 0l1.21-1.21a4 4 0 0 1 4.78 4.78l-1.21 1.21a1 1 0 0 0 0 1.42l1.21 1.21a4 4 0 0 1-4.78 4.78l-1.21-1.21a1 1 0 0 0-1.42 0l-1.21 1.21a4 4 0 0 1-4.78-4.78l1.21-1.21a1 1 0 0 0 0-1.42z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Trusted Picks</h3>
+                        <p class="text-gray-600">Kami pilihkan yang terbukti membantu ribuan orang berkembang. Tidak semua produk kami rekomendasikan.</p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Hemat Waktu & Biaya</h3>
+                        <p class="text-gray-600">Berhenti buang waktu trial-error. Langsung ke produk yang tepat — dapat promo & bonus!</p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Skill Up, Level Up</h3>
+                        <p class="text-gray-600">Naik skill, buka peluang baru. Dari freelancer pemula sampai pebisnis digital — grow bareng!</p>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A2.5 2.5 0 0 1 12 5.5V8"/><path d="M16.5 8a2.5 2.5 0 0 0 0-5A2.5 2.5 0 0 0 12 5.5V8"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Update & Bonus</h3>
+                        <p class="text-gray-600">Dapat info promo terbaru & bonus eksklusif untuk member.</p>
+                    </div>
+                </div>
+                <p class="text-center mt-12 text-gray-600 italic" data-aos="fade-up" data-aos-delay="500">
+                    Bayangkan berapa banyak waktu & uang yang kamu hemat hanya karena kamu tidak salah pilih.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. MINI STORY / BRAND WHY -->
+        <section id="brand-story" class="py-20 md:py-28 bg-blue-50">
+            <div class="container mx-auto px-6" data-aos="zoom-in">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        ✨ Kenapa Kami Membuat Reko Digital?
+                    </h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Kami tahu rasanya bingung pilih kursus atau tools. Gampang ketipu promo bombastis, sulit dapat rekomendasi yang jujur. Reko Digital lahir agar kamu tidak perlu riset ribet lagi — semua rekomendasi di sini sudah melalui filter: trusted, relevan, dan update.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PRODUK UNGGULAN -->
+        <section id="produk" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        🔥 Produk Digital & Ecourse Pilihan
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                        Pilih produk yang cocok, dapatkan benefitnya. Semua link resmi, promo valid, 100% aman.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in-up" data-aos-delay="100">
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Masterclass" alt="Masterclass Content Creator" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-gray-800">Masterclass Content Creator</h3>
+                            <p class="text-gray-600 mt-2 mb-4 flex-grow">Belajar bikin konten viral dari praktisi, bonus template konten ready.</p>
+                            <a href="#" class="mt-auto w-full text-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                                Dapatkan Sekarang
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in-up" data-aos-delay="200">
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Canva+Pro" alt="Tools Canva Premium" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-gray-800">Tools Canva Premium Lifetime</h3>
+                            <p class="text-gray-600 mt-2 mb-4 flex-grow">Buka akses desain unlimited. Resmi, harga spesial.</p>
+                            <a href="#" class="mt-auto w-full text-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                                Dapatkan Sekarang
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 (Example) -->
+                    <div class="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-aos="zoom-in-up" data-aos-delay="300">
+                        <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Ecourse+SEO" alt="Ecourse SEO" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-gray-800">Ecourse SEO untuk Pemula</h3>
+                            <p class="text-gray-600 mt-2 mb-4 flex-grow">Peringkat 1 di Google bukan mimpi. Pelajari fundamental SEO yang benar.</p>
+                            <a href="#" class="mt-auto w-full text-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                                Dapatkan Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mt-12 text-red-600 font-semibold" data-aos="fade-up">
+                    Promo hanya valid minggu ini — hindari kehabisan bonus.
+                </p>
+            </div>
+        </section>
+
+        <!-- 6. PROMO BANNER / SCARCITY BAR -->
+        <section id="promo-banner" class="bg-gradient-to-r from-blue-600 to-indigo-700" data-aos="zoom-in">
+            <div class="container mx-auto px-6 py-10 text-center text-white">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4">🚨 Diskon hingga 50% + Bonus Ecourse Tambahan</h2>
+                <div id="countdown-timer" class="flex justify-center gap-2 sm:gap-4 md:gap-8 my-6">
+                    <!-- Countdown items will be injected here by JS -->
+                </div>
+                <a href="#produk" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-base md:text-lg hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105 whitespace-nowrap">
+                    Ambil Promonya Sekarang
+                </a>
+            </div>
+        </section>
+
+        <!-- 7. TESTIMONIAL CAROUSEL -->
+        <section id="testimonials" class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto px-6" data-aos="fade-up">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        💬 Kata Mereka Tentang Reko Digital
+                    </h2>
+                </div>
+                <div class="relative max-w-3xl mx-auto">
+                    <div class="overflow-hidden w-full rounded-xl">
+                        <div id="testimonial-container" class="flex">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-card w-full flex-shrink-0">
+                                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                    <p class="text-lg text-gray-700 italic mb-6">Kalau nggak ada Reko Digital, saya pasti buang duit buat tools yang nggak kepakai. Sekarang lebih hemat & tepat.</p>
+                                    <p class="font-bold text-gray-900">Dina, Freelancer</p>
+                                </div>
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial-card w-full flex-shrink-0">
+                                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                    <p class="text-lg text-gray-700 italic mb-6">Saya belajar banyak dari rekomendasi ecourse di sini. Dapat diskon juga, double untung!</p>
+                                    <p class="font-bold text-gray-900">Andi, Content Creator</p>
+                                </div>
+                            </div>
+                             <!-- Testimonial 3 -->
+                            <div class="testimonial-card w-full flex-shrink-0">
+                                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                    <p class="text-lg text-gray-700 italic mb-6">Rekomendasinya jujur dan to the point. Nggak ada basa-basi, cocok buat yang sibuk kayak saya.</p>
+                                    <p class="font-bold text-gray-900">Rian, Pebisnis Online</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="prevBtn" class="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-4 md:-translate-x-12 bg-white p-2 rounded-full shadow-md text-gray-600 hover:bg-gray-100 transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button id="nextBtn" class="absolute top-1/2 -translate-y-1/2 right-0 translate-x-4 md:translate-x-12 bg-white p-2 rounded-full shadow-md text-gray-600 hover:bg-gray-100 transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CTA SECTION — HYPNOWRITING PEAK -->
+        <section id="final-cta" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6 text-center" data-aos="zoom-in">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 max-w-3xl mx-auto mb-8">
+                    ✨ Bayangkan Skill Kamu Naik, Tools Lengkap, Dan Hemat Biaya. Siap Mulai?
+                </h2>
+                <a href="#produk" class="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105 shadow-lg animate-pulse">
+                    🔵 Lihat Semua Rekomendasi
+                </a>
+            </div>
+        </section>
+
+        <!-- 9. LEAD MAGNET SECTION -->
+        <section id="lead-magnet" class="py-20 md:py-28 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            🎁 Download Gratis: Checklist Tools Digital Terbaik 2025
+                        </h2>
+                        <p class="text-lg text-gray-700">
+                            Dapatkan 10+ rekomendasi tools & ecourse yang wajib kamu miliki untuk skill & income naik level. Gratis, tanpa ribet.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-2xl" data-aos="fade-left">
+                        <form action="#">
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nama</label>
+                                <input type="text" id="name" name="name" placeholder="Nama Lengkap Anda" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition-shadow" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email / No WA</label>
+                                <input type="email" id="email" name="email" placeholder="contoh@email.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition-shadow" required>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                                Kirim Checklist Gratis
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. FAQ — MENGUSIR KERAGUAN -->
+        <section id="faq" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        ❓ Pertanyaan Umum
+                    </h2>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                        <details class="p-6 group">
+                            <summary class="font-semibold text-lg text-gray-800 cursor-pointer flex justify-between items-center">
+                                Bagaimana cara saya beli produk rekomendasi?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-open:rotate-180 transition-transform duration-300"><path d="m6 9 6 6 6-6"/></svg>
+                            </summary>
+                            <p class="text-gray-600 mt-4">
+                                👉 Klik tombol “Dapatkan Sekarang”, kamu akan diarahkan ke link resmi produk tersebut untuk melakukan pembelian. Kami tidak memproses transaksi secara langsung.
+                            </p>
+                        </details>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                        <details class="p-6 group">
+                            <summary class="font-semibold text-lg text-gray-800 cursor-pointer flex justify-between items-center">
+                                Apakah ini resmi & aman?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-open:rotate-180 transition-transform duration-300"><path d="m6 9 6 6 6-6"/></svg>
+                            </summary>
+                            <p class="text-gray-600 mt-4">
+                                👉 Ya! 100% resmi dan aman. Semua produk & link yang kami rekomendasikan adalah official partner. Tidak ada link bodong atau produk bajakan.
+                            </p>
+                        </details>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                        <details class="p-6 group">
+                            <summary class="font-semibold text-lg text-gray-800 cursor-pointer flex justify-between items-center">
+                                Apakah saya rugi jika beli lewat sini?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-open:rotate-180 transition-transform duration-300"><path d="m6 9 6 6 6-6"/></svg>
+                            </summary>
+                            <p class="text-gray-600 mt-4">
+                                👉 Tidak sama sekali. Harga yang Anda bayar sama (atau bahkan lebih murah karena info promo). Bahkan, beberapa partner memberikan bonus tambahan jika Anda membeli melalui link rekomendasi kami.
+                            </p>
+                        </details>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                        <details class="p-6 group">
+                            <summary class="font-semibold text-lg text-gray-800 cursor-pointer flex justify-between items-center">
+                                Bagaimana kalau saya butuh rekomendasi personal?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-open:rotate-180 transition-transform duration-300"><path d="m6 9 6 6 6-6"/></svg>
+                            </summary>
+                            <p class="text-gray-600 mt-4">
+                                � Tentu saja! Hubungi tim Reko Digital lewat WhatsApp atau email yang tertera di footer. Kami akan dengan senang hati membantu Anda.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. FOOTER -->
+    <footer class="bg-gray-800 text-gray-300">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- About -->
+                <div data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-white mb-4">RekoDigital</h3>
+                    <p class="text-gray-400">Reko Digital adalah platform kurasi dan rekomendasi produk digital, ecourse, & tools terpercaya untuk membantu Anda berkembang di dunia digital.</p>
+                </div>
+                <!-- Social Media -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-white mb-4">Temukan Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tiktok"><path d="M12 12a4 4 0 1 0 4 4v-1a2 2 0 1 1-2-2h-1a5 5 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9a2 2 0 0 1 2-2h-1a4 4 0 0 0-4-4h-1a4.5 4.5 0 0 0-4.5 4.5v1Z"/></svg>
+                        </a>
+                    </div>
+                    <p class="mt-2 text-gray-400">@rekodigital</p>
+                </div>
+                <!-- Contact & Disclaimer -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-white mb-4">Kontak & Info</h3>
+                    <p class="text-gray-400 mb-2">📩 rekodigital@gmail.com</p>
+                    <p class="text-xs text-gray-500 mt-4">⚡ <span class="font-semibold">Disclaimer:</span> Beberapa link di situs ini bersifat affiliate. Kami bisa menerima komisi tanpa biaya tambahan bagi Anda jika Anda melakukan pembelian melalui link tersebut. Ini membantu kami untuk terus memberikan rekomendasi terbaik.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Reko Digital. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                once: true, 
+            });
+
+            // Testimonial Carousel Logic
+            const testimonialContainer = document.getElementById('testimonial-container');
+            const testimonials = document.querySelectorAll('.testimonial-card');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            if (testimonialContainer && testimonials.length > 0) {
+                let currentIndex = 0;
+                const totalTestimonials = testimonials.length;
+
+                function showTestimonial(index) {
+                    testimonialContainer.style.transform = `translateX(-${index * 100}%)`;
+                }
+
+                if(nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        currentIndex = (currentIndex + 1) % totalTestimonials;
+                        showTestimonial(currentIndex);
+                    });
+                }
+                
+                if(prevBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+                        showTestimonial(currentIndex);
+                    });
+                }
+
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % totalTestimonials;
+                    showTestimonial(currentIndex);
+                }, 5000);
+            }
+
+            // Countdown Timer Logic
+            const countdownContainer = document.getElementById('countdown-timer');
+            
+            function startCountdown() {
+                const now = new Date();
+                const endOfWeek = new Date(now);
+                
+                // Set to this coming Sunday 23:59:59
+                endOfWeek.setDate(now.getDate() + (7 - now.getDay()) % 7);
+                if (now.getDay() === 0) { // If it's already Sunday, set to the end of today
+                    endOfWeek.setDate(now.getDate());
+                }
+                endOfWeek.setHours(23, 59, 59, 999);
+                
+                const countdownInterval = setInterval(() => {
+                    const currentTime = new Date().getTime();
+                    const distance = endOfWeek.getTime() - currentTime;
+
+                    if (distance < 0) {
+                        clearInterval(countdownInterval);
+                        countdownContainer.innerHTML = "<p class='text-lg font-semibold'>Promo telah berakhir!</p>";
+                        return;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    countdownContainer.innerHTML = `
+                        <div class="countdown-item">
+                            <span class="countdown-number">${String(days).padStart(2, '0')}</span>
+                            <span class="countdown-label">Hari</span>
+                        </div>
+                        <span class="countdown-number">:</span>
+                        <div class="countdown-item">
+                            <span class="countdown-number">${String(hours).padStart(2, '0')}</span>
+                            <span class="countdown-label">Jam</span>
+                        </div>
+                        <span class="countdown-number">:</span>
+                        <div class="countdown-item">
+                            <span class="countdown-number">${String(minutes).padStart(2, '0')}</span>
+                            <span class="countdown-label">Menit</span>
+                        </div>
+                        <span class="countdown-number">:</span>
+                        <div class="countdown-item">
+                            <span class="countdown-number">${String(seconds).padStart(2, '0')}</span>
+                            <span class="countdown-label">Detik</span>
+                        </div>
+                    `;
+                }, 1000);
+            }
+
+            if (countdownContainer) {
+                startCountdown();
+            }
+        });
+    </script>
+</body>
+</html>
+�
